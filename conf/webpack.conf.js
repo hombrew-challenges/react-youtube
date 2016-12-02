@@ -27,9 +27,13 @@ module.exports = {
         loaders: [
           'style',
           'css',
-          'sass',
-          'postcss'
+          'postcss',
+          'sass'
         ]
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        loader: 'url-loader?limit=100000'
       },
       {
         test: /\.js$/,

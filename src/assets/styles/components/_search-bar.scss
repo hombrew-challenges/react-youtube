@@ -1,0 +1,40 @@
+.search-bar {
+  background-color: white;
+  .sidenav-toogle-button {
+    float: left;
+    padding: 18px;
+    cursor: pointer;
+  }
+  .search-bar-brand {
+    padding: 0 15px;
+    overflow: hidden;
+    .brand-logo {
+      max-height: 100px;
+      width: auto;
+      margin-top: -25px;
+    }
+  }
+  .navbar-search-bar {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    .navbar-search-bar-input {
+      width: 300px;
+    }
+    .navbar-search-bar-btn {
+      border: 1px solid #ccc;
+      padding-left: 25px;
+      padding-right: 25px;
+      color: grey;
+    }
+  }
+  .navbar-user {
+    padding: 11px 15px;
+    margin-left: 0 !important;
+    .user-picture {
+      border-radius: 50%;
+      max-width: 28px;
+    }
+  }
+}
