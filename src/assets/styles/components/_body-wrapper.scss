@@ -1,0 +1,32 @@
+.sidenav-wrapper {
+  // z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #000;
+  transition: all 0.5s ease;
+}
+
+.content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+.body-wrapper {
+  padding-left: 0;
+  transition: all 0.5s ease;
+  &.toggled {
+    padding-left: 250px;
+    .sidenav-wrapper {
+      width: 250px;
+    }
+    .content-wrapper {
+      position: absolute;
+      margin-right: -250px;
+    }
+  }
+}
