@@ -5,13 +5,20 @@ import Content from '../containers/content';
 
 class BoddyWrapper extends Component {
 
-  render() {
+  onSideNavToggleClass() {
     let toggled = '';
     toggled = this.props.sidenavState ? 'toggled' : '';
+    return `body-wrapper ${toggled}`;
+  }
+
+  render() {
     return (
-      <div className={`body-wrapper ${toggled}`}>
-        <SideNav pages={this.props.pages}/>
-        <Content/>
+      <div>
+        <div className="its-a-trap"></div>
+        <div className={this.onSideNavToggleClass()}>
+          <SideNav pages={this.props.pages}/>
+          <Content/>
+        </div>
       </div>
     );
   }

@@ -1,0 +1,50 @@
+.sidenav-wrapper {
+
+  // positioning
+  position: fixed;
+  left: 230px;
+  width: 0;
+  height: 100%;
+  margin-left: -230px;
+  overflow-y: auto;
+  transition: all 0.5s ease;
+
+  // appearance
+  background: $yt-white;
+  .sidenav {
+    padding: 13px 22px;
+    list-style: none;
+    li {
+      a {
+        font-weight: 500;
+        width: 186px;
+        display: inline-block;
+        color: $yt-dark-grey;
+        &:hover {
+          background-color: $yt-dark-grey;
+          span {
+            color: $yt-white;
+          }
+        }
+        &.selected {
+          background-color: $yt-dark-red;
+          span {
+            color: $yt-white;
+          }
+        }
+        span {
+          color: $yt-dark-grey;
+          display: inline-block;
+          padding: 14px;
+          font-family: Roboto, arial, sans-serif;
+          font-size: .9em;
+          font-weight: 400;
+          i {
+            padding-right: 15px;
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
+  }
+}

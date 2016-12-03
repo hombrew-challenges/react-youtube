@@ -13,7 +13,7 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-default search-bar">
+      <nav className="navbar navbar-default navbar-fixed-top search-bar">
         <div className="container-fluid">
           <div className="navbar-header">
             <i

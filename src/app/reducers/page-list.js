@@ -1,10 +1,10 @@
 export default () => {
   return [
-    {name: 'Inicio', icon: 'home', nav: true},
-    {name: 'Mi Canal', icon: 'user', nav: false},
-    {name: 'Tendencias', icon: 'fire', nav: true},
-    {name: 'Suscripciones', icon: 'folders', nav: true},
-    {name: 'Historial', icon: 'sand', nav: false},
-    {name: 'Ver más tarde', icon: 'time', nav: false}
+    {name: 'Home', icon: 'home', nav: true, selected: true},
+    {name: 'My Channel', icon: 'user-circle', nav: false, selected: false},
+    {name: 'Trending', icon: 'fire', nav: true, selected: false},
+    {name: 'Subscriptions', icon: 'folder-open', nav: true, selected: false},
+    {name: 'History', icon: 'history', nav: false, selected: false},
+    {name: 'Watch Later', icon: 'clock-o', nav: false, selected: false}
   ];
 };
