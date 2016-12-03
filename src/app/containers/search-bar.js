@@ -24,7 +24,12 @@ class SearchBar extends Component {
             <a className="navbar-brand search-bar-brand">
               <img
                 alt="Brand"
-                className="brand-logo"
+                className="collapsed-brand-logo"
+                src="assets/images/collapsed-youtube-logo-128.png"
+                />
+              <img
+                alt="Brand"
+                className="expanded-brand-logo"
                 src="assets/images/expanded-youtube-logo-128.png"
                 />
             </a>
@@ -57,7 +62,7 @@ class SearchBar extends Component {
           </a>
           <button
             type="button"
-            className="btn btn-default navbar-btn navbar-right"
+            className="btn btn-default navbar-btn navbar-right upload-button"
             >
             Upload
           </button>

@@ -10,7 +10,7 @@ export default class SideNav extends Component {
     return this.props.pages.map((page, index) => {
       return (
         <li key={index}>
-          <a href="" className={this.pageIsSelected(page.selected)}>
+          <a href={page.url} className={this.pageIsSelected(page.selected)}>
             <span>
               <i className={`fa fa-${page.icon}`}></i>
               {page.name}

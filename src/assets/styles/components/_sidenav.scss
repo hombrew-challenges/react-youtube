@@ -11,6 +11,8 @@
 
   // appearance
   background: $yt-white;
+  box-shadow: 5px 10px 15px 5px rgba(0,0,0,.1);
+  z-index: 1;
   .sidenav {
     padding: 13px 22px;
     list-style: none;
@@ -36,7 +38,7 @@
           color: $yt-dark-grey;
           display: inline-block;
           padding: 14px;
-          font-family: Roboto, arial, sans-serif;
+          font-family: $yt-font;
           font-size: .9em;
           font-weight: 400;
           i {

@@ -1,0 +1,45 @@
+.content-navbar {
+  .navbar {
+    width: 100%;
+    background-color: $yt-white;
+    &.content-navbar-fixed {
+      position: fixed;
+      border-width: 0 0 1px;
+    }
+    .navbar-nav {
+      float: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 270px;
+      li {
+        float: left;
+        white-space: nowrap;
+        padding: 0 15px;
+        a {
+          // padding: 15px 0;
+          box-sizing: border-box;
+          padding: 15px 0;
+          height: 50px;
+          border-bottom: 3px solid transparent;
+          color: $yt-dark-grey;
+        }
+        &.selected a {
+          font-weight: 700;
+          border-color: $yt-dark-red;
+        }
+        &:hover a {
+          border-color: $yt-dark-red;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      .navbar-nav {
+        margin-top: 5px;
+      }
+    }
+  }
+}

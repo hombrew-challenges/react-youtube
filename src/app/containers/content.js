@@ -1,23 +1,32 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
+
+// components
+import NavBar from '../components/navbar';
+import ContentBody from '../components/content-body';
 
 class Content extends Component {
 
   render() {
     return (
       <div className="content-wrapper">
-        I'm the content
+        <NavBar pages={this.props.pages}/>
+        <ContentBody/>
       </div>
     );
   }
 }
 
-// Content.propTypes = {
-//   handleToogleSidebar: PropTypes.func.isRequired
-// };
+Content.propTypes = {
+  pages: PropTypes.array.isRequired
+};
 
-// mapStateToProps()
+function mapStateToProps(state) {
+  return {
+    pages: state.pages
+  };
+}
 
 export default connect(
-	null
+	mapStateToProps
 )(Content);
