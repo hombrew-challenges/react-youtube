@@ -2,6 +2,7 @@
   .navbar {
     width: 100%;
     background-color: $yt-white;
+    min-height: 40px;
     z-index: 1;
     &.content-navbar-fixed {
       position: fixed;
@@ -19,10 +20,10 @@
         white-space: nowrap;
         padding: 0 15px;
         a {
-          // padding: 15px 0;
+          font-size: 13px;
           box-sizing: border-box;
-          padding: 15px 0;
-          height: 50px;
+          padding: 10px 0;
+          height: 40px;
           border-bottom: 3px solid transparent;
           color: $yt-dark-grey;
         }
