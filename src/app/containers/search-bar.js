@@ -14,14 +14,14 @@ class SearchBar extends Component {
   render() {
     return (
       <nav className="navbar navbar-default navbar-fixed-top search-bar">
-        <div className="container-fluid">
-          <div className="navbar-header">
+        <div className="search-bar-content-wrapper">
+          <div className="search-bar-left">
             <i
               className="fa fa-bars sidenav-toogle-button"
               onClick={this.props.handleToogleSidebar}
               >
             </i>
-            <a className="navbar-brand search-bar-brand">
+            <a className="search-bar-brand">
               <img
                 alt="Brand"
                 className="collapsed-brand-logo"
@@ -36,7 +36,7 @@ class SearchBar extends Component {
           </div>
 
           <form
-            className="navbar-form navbar-search-bar"
+            className="search-bar-center"
             onSubmit={this.handleOnFormSubmit}
             >
             <div className="input-group">
@@ -46,26 +46,28 @@ class SearchBar extends Component {
                 type="text"
                 />
               <span className="input-group-btn">
-                <button type="submit" className="btn navbar-search-bar-btn">
+                <button type="submit" className="btn navbar-search-bar-btn yt-button">
                   <i className="fa fa-search"></i>
                 </button>
               </span>
             </div>
           </form>
 
-          <a className="navbar-brand navbar-right navbar-user">
-            <img
-              alt="Brand"
-              className="user-picture"
-              src="assets/images/google-user-picture.jpg"
-              />
-          </a>
-          <button
-            type="button"
-            className="btn btn-default navbar-btn navbar-right upload-button"
-            >
-            Upload
-          </button>
+          <div className="search-bar-right">
+            <button
+              type="button"
+              className="btn btn-default navbar-btn upload-button yt-button"
+              >
+              Upload
+            </button>
+            <a className="search-bar-user" href="#">
+              <img
+                alt="Brand"
+                className="user-picture"
+                src="assets/images/google-user-picture.jpg"
+                />
+            </a>
+          </div>
         </div>
       </nav>
     );
