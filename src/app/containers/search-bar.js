@@ -13,63 +13,66 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-default navbar-fixed-top search-bar">
-        <div className="search-bar-content-wrapper">
-          <div className="search-bar-left">
-            <i
-              className="fa fa-bars sidenav-toogle-button"
-              onClick={this.props.handleToogleSidebar}
-              >
-            </i>
-            <a className="search-bar-brand">
-              <img
-                alt="Brand"
-                className="collapsed-brand-logo"
-                src="assets/images/collapsed-youtube-logo-128.png"
-                />
-              <img
-                alt="Brand"
-                className="expanded-brand-logo"
-                src="assets/images/expanded-youtube-logo-128.png"
-                />
-            </a>
-          </div>
-
-          <form
-            className="search-bar-center"
-            onSubmit={this.handleOnFormSubmit}
-            >
-            <div className="input-group">
-              <input
-                placeholder="Search"
-                className="form-control navbar-search-bar-input"
-                type="text"
-                />
-              <span className="input-group-btn">
-                <button type="submit" className="btn navbar-search-bar-btn yt-button">
-                  <i className="fa fa-search"></i>
-                </button>
-              </span>
+      <div>
+        <nav className="navbar navbar-default navbar-fixed-top search-bar">
+          <div className="search-bar-content-wrapper">
+            <div className="search-bar-left">
+              <i
+                className="fa fa-bars sidenav-toogle-button"
+                onClick={this.props.handleToogleSidebar}
+                >
+              </i>
+              <a className="search-bar-brand">
+                <img
+                  alt="Brand"
+                  className="collapsed-brand-logo"
+                  src="assets/images/collapsed-youtube-logo-128.png"
+                  />
+                <img
+                  alt="Brand"
+                  className="expanded-brand-logo"
+                  src="assets/images/expanded-youtube-logo-128.png"
+                  />
+              </a>
             </div>
-          </form>
 
-          <div className="search-bar-right">
-            <button
-              type="button"
-              className="btn btn-default navbar-btn upload-button yt-button"
+            <form
+              className="search-bar-center"
+              onSubmit={this.handleOnFormSubmit}
               >
-              Upload
-            </button>
-            <a className="search-bar-user" href="#">
-              <img
-                alt="Brand"
-                className="user-picture"
-                src="assets/images/google-user-picture.jpg"
-                />
-            </a>
+              <div className="input-group">
+                <input
+                  placeholder="Search"
+                  className="form-control navbar-search-bar-input"
+                  type="text"
+                  />
+                <span className="input-group-btn">
+                  <button type="submit" className="btn navbar-search-bar-btn yt-button">
+                    <i className="fa fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div className="search-bar-right">
+              <button
+                type="button"
+                className="btn btn-default navbar-btn upload-button yt-button"
+                >
+                Upload
+              </button>
+              <a className="search-bar-user" href="#">
+                <img
+                  alt="Brand"
+                  className="user-picture"
+                  src="assets/images/google-user-picture.jpg"
+                  />
+              </a>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+        <div className="its-a-trap"></div>
+      </div>
     );
   }
 }

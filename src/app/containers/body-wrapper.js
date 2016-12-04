@@ -14,7 +14,6 @@ class BoddyWrapper extends Component {
   render() {
     return (
       <div>
-        <div className="its-a-trap"></div>
         <div className={this.onSideNavToggleClass()}>
           <SideNav pages={this.props.pages}/>
           <Content/>
