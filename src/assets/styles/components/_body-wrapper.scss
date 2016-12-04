@@ -2,16 +2,20 @@
   padding-left: 0;
   transition: all 0.5s ease;
   &.toggled {
-    padding-left: 230px;
     .sidenav-wrapper {
       width: 230px;
     }
-    .content-wrapper {
-      position: absolute;
-      margin-right: -230px;
-    }
-    .content-navbar {
-      left: 230px;
+  }
+  @media screen and (min-width: 768px) {
+    &.toggled {
+      padding-left: 230px;
+      .content-wrapper {
+        position: absolute;
+        margin-right: -230px;
+      }
+      .content-navbar {
+        left: 230px;
+      }
     }
   }
 }

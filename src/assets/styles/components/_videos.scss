@@ -1,0 +1,29 @@
+.loading-videos {
+  padding: 20px;
+}
+
+.video-list {
+  .video {
+    margin-top: 20px;
+    display: inline-block;
+    max-width: 196px;
+    .thumb {
+      max-height: 110px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      img {
+        max-width: 196px;
+        height: auto;
+        margin-top: -18.5px;
+      }
+    }
+    .title {
+      text-align: left;
+      height: 40px;
+      overflow: hidden;
+      p {
+        font-weight: 700;
+      }
+    }
+  }
+}

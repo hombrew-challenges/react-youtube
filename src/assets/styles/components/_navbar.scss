@@ -2,6 +2,7 @@
   .navbar {
     width: 100%;
     background-color: $yt-white;
+    z-index: 1;
     &.content-navbar-fixed {
       position: fixed;
       border-width: 0 0 1px;
@@ -12,6 +13,7 @@
       left: 50%;
       transform: translateX(-50%);
       min-width: 270px;
+      margin: 0;
       li {
         float: left;
         white-space: nowrap;
@@ -31,14 +33,6 @@
         &:hover a {
           border-color: $yt-dark-red;
         }
-      }
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .navbar {
-      .navbar-nav {
-        margin-top: 5px;
       }
     }
   }
