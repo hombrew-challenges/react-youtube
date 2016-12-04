@@ -19,14 +19,18 @@ class Content extends Component {
     return (
       <div className="content-wrapper">
         <NavBar pages={this.props.pages}/>
-        <div className="its-a-trap"></div>
-        <VideoList playlist={this.props.playlist}/>
+        <div className="its-a-navbar-trap"></div>
+        <VideoList
+          sidenavState={this.props.sidenavState}
+          playlist={this.props.playlist}
+          />
       </div>
     );
   }
 }
 
 Content.propTypes = {
+  sidenavState: PropTypes.bool.isRequired,
   pages: PropTypes.array.isRequired,
   playlist: PropTypes.array.isRequired,
   fetchPlaylist: PropTypes.func.isRequired
@@ -34,6 +38,7 @@ Content.propTypes = {
 
 function mapStateToProps(state) {
   return {
+    sidenavState: state.sidenavState,
     pages: state.pages,
     playlist: state.playlist
   };

@@ -3,8 +3,9 @@
 }
 
 .video-list {
+  padding: 0 60px;
   .video {
-    margin-top: 20px;
+    margin-top: 15px;
     display: inline-block;
     max-width: 196px;
     .thumb {
@@ -24,6 +25,18 @@
       p {
         font-weight: 700;
       }
+    }
+  }
+
+  @media screen and (max-width: 499px) {
+    .col-video {
+      width: 100% !important;
+    }
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1300px) {
+    .col-video {
+      width: 25% !important;
     }
   }
 }

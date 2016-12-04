@@ -18,8 +18,6 @@
   max-height: 50px;
   .search-bar-content-wrapper {
     display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
     white-space: nowrap;
 
     // left side
@@ -60,6 +58,9 @@
       margin: 0;
       padding: 2px 0;
       border-color: transparent;
+      .input-group {
+        width: $yt-sb-ts-w;
+      }
       .navbar-search-bar-input,
       .navbar-search-bar-btn {
         height: 28px;
@@ -67,7 +68,7 @@
         border: 1px solid #ccc;
       }
       .navbar-search-bar-input {
-        width: 246px;
+        width: $yt-sb-ts-w;
         box-shadow: 0 1px 1px transparent inset, 0 0 0 transparent;
       }
       .navbar-search-bar-btn {
@@ -96,6 +97,19 @@
       }
     }
   }
+
+  @media screen and (min-width: 500px) {
+    .search-bar-content-wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+      .search-bar-center {
+        .input-group,
+        .navbar-search-bar-input {
+          width: $yt-sb-sm-w;
+        }
+      }
+    }
+  }
   @media screen and (min-width: 768px) {
     text-align: left;
     .search-bar-content-wrapper {
@@ -116,6 +130,9 @@
       .search-bar-center {
         margin-left: 93px;
         width: 48%;
+        .input-group {
+          width: 100%;
+        }
         .navbar-search-bar-input {
           width: 100%;
         }
